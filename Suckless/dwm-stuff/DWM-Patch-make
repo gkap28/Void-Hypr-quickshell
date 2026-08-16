@@ -1,0 +1,99 @@
+
+# Meine Patches
+/home/georg/Dokumente/patches/dwm-autostart-20210120-cb3f58a.diff
+/home/georg/Dokumente/patches/dwm-bottomstack-6.1.diff
+/home/georg/Dokumente/patches/dwm-cyclelayouts-20180524-6.2.diff
+/home/georg/Dokumente/patches/dwm-float-border-color-20231008-3a7ea45f.diff
+/home/georg/Dokumente/patches/dwm-focusadjacenttag-6.3.diff
+/home/georg/Dokumente/patches/dwm-restartsig-20180523-6.2.diff
+/home/georg/Dokumente/patches/dwm-scratchpads-20200414-728d397b.diff
+/home/georg/Dokumente/patches/dwm-statusallmons-6.5.diff
+/home/georg/Dokumente/patches/dwm-statuscolors-20220322-bece862.diff
+/home/georg/Dokumente/patches/dwm-titlecolor-20210815-ed3ab6b4.diff
+/home/georg/Dokumente/patches/dwm-uselessgap-20211119-58414bee958f2.diff
+/home/georg/Dokumente/patches/dwm-viewontag-20210312-61bb8b2.diff
+
+# Workflows zum Patches
+git clone https://git.suckless.org/dwm dwm
+cd dwm
+git checkout 6.7
+
+git checkout -b base-6.7
+git commit --allow-empty -m "base dwm 6.7"
+# Autostart
+git checkout -b patch-autostart base-6.7
+patch -p1 < ~/Dokumente/patches/dwm-autostart-20210120-cb3f58a.diff
+git commit -am "patch: autostart"
+#Restartsig
+git checkout -b patch-restartsig patch-autostart
+patch -p1 < ~/Dokumente/patches/dwm-restartsig-20180523-6.2.diff
+git commit -am "patch: restartsig"
+#Cyclelayouts
+git checkout -b patch-cyclelayouts patch-restartsig
+patch -p1 < ~/Dokumente/patches/dwm-cyclelayouts-20180524-6.2.diff
+git commit -am "patch: cyclelayouts"
+#Bottomstack
+git checkout -b patch-bottomstack patch-cyclelayouts
+patch -p1 < ~/Dokumente/patches/dwm-bottomstack-6.1.diff
+git commit -am "patch: bottomstack"
+#Focusadjacenttag
+git checkout -b patch-focusadjacenttag patch-bottomstack
+patch -p1 < ~/Dokumente/patches/dwm-focusadjacenttag-6.3.diff
+git commit -am "patch: focusadjacenttag"
+#Viewontag
+git checkout -b patch-viewontag patch-focusadjacenttag
+patch -p1 < ~/Dokumente/patches/dwm-viewontag-20210312-61bb8b2.diff
+git commit -am "patch: viewontag"
+#Uselessgap
+git checkout -b patch-uselessgap patch-viewontag
+patch -p1 < ~/Dokumente/patches/dwm-uselessgap-20211119-58414bee958f2.diff
+git commit -am "patch: uselessgap"
+#Scratchpads
+git checkout -b patch-scratchpads patch-uselessgap
+patch -p1 < ~/Dokumente/patches/dwm-scratchpads-20200414-728d397b.diff
+git commit -am "patch: scratchpads"
+#Statuscolor
+git checkout -b patch-statuscolors patch-scratchpads
+patch -p1 < ~/Dokumente/patches/dwm-statuscolors-20220322-bece862.diff
+git commit -am "patch: statuscolors"
+#Statusallmons
+git checkout -b patch-statusallmons patch-statuscolors
+patch -p1 < ~/Dokumente/patches/dwm-statusallmons-6.5.diff
+git commit -am "patch: statusallmons"
+#Titlecolor
+git checkout -b patch-titlecolor patch-statusallmons
+patch -p1 < ~/Dokumente/patches/dwm-titlecolor-20210815-ed3ab6b4.diff
+git commit -am "patch: titlecolor"
+#Float-border-color
+git checkout -b patch-float-border-color patch-titlecolor
+patch -p1 < ~/Dokumente/patches/dwm-float-border-color-20231008-3a7ea45f.diff
+git commit -am "patch: float border color"
+#Finaler Branch
+git checkout -b dwm-georg patch-float-border-color
+make clean
+sudo make install
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

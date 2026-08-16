@@ -1,0 +1,294 @@
+/*	GENERAL	*/
+* {
+	font-family: inherit;
+	border: none;
+	border-radius: 0px;
+}
+window#waybar {
+	background-color: rgba(0,0,0,0.8);
+	border-bottom: 0px solid #ffffff;
+	background: transparent;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+
+
+/*	TOOLTIPS	*/
+tooltip {
+	border-radius: 15px;
+	background: @background;
+	border: 1px double @backgroundlight;
+}
+tooltip label {
+	color: @iconcolor;
+}
+
+/*	WINDOW	*/
+#window {
+	background: transparent;
+	margin: 5px 15px 5px 0px;
+	padding: 3px 8px 3px 8px;
+	border-radius: 20px;
+	color: @textcolor2;
+	font-size: 15px;
+	opacity: 0.8;
+	border: 1px double @backgroundlight;
+}
+window#waybar.empty #window {
+	border-color: transparent;
+}
+
+/*	TASKBAR	*/
+#taskbar {
+	background: @workspacesbackground1;
+	margin: 5px 15px 5px -5px;
+	padding: 0px;
+	border-radius: 20px;
+	opacity: 0.8;
+	border: 1px double @backgroundlight;
+}
+#taskbar button {
+	margin: 0;
+	border-radius: 20px;
+	padding: 0px 6px 0px 6px;
+}
+
+/*	MODULES	*/
+.modules-left > widget:first-child > #workspaces {
+	margin-left: 0;
+}
+.modules-right > widget:last-child > #workspaces {
+	margin-right: 0;
+}
+
+/*	CUSTOM QUICKLINKS	*/
+#custom-script,
+#custom-browser,
+#custom-filemanager,
+#custom-player,
+#custom-cliphist,
+#custom-system,
+#custom-themes {
+	margin-right: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	opacity: 0.8;
+	color: @iconcolor;
+}
+
+/*	CUSTOM APPMENU	*/
+#custom-appmenu {
+	background: @workspacesbackground2;
+	font-size: 22px;
+	color: @textcolor1;
+	border-radius: 20px;
+	padding: 0px 6px 0px 6px;
+	margin: 3px 15px 5px 10px;
+	opacity:0.5;
+}
+
+/*	CUSTOM EXIT	*/
+#custom-exit {
+	background: @workspacesbackground2;
+	font-size: 22px;
+	color: @textcolor1;
+	border-radius: 20px;
+	padding: 0px 7px 0px 7px;
+	margin: 3px 10px 5px 0px;
+	opacity: 0.5;
+}
+
+/*	CUSTOM UPDATES	*/
+#custom-updates {
+	background: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	color: @textcolor2;
+	border-radius: 20px;
+	padding: 3px 8px 3px 8px;
+	margin: 5px 15px 5px 0px;
+	opacity: 0.8;
+	border: 1px double @backgroundlight;
+}
+#custom-updates.zero {
+	background: transparent;
+}
+#custom-updates.green {
+	background: @workspacesbackground1;
+	color: #FFFFFF;
+}
+#custom-updates.yellow {
+	background: @workspacesbackground2;
+	color: #FFFFFF;
+}
+#custom-updates.red {
+	background: #dc2f2f;
+	color: #FFFFFF;
+}
+
+/*	HYPRLAND LANGUAGE	*/
+#language {
+	background: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	color: @textcolor2;
+	border-radius: 20px;
+	padding: 3px 8px 3px 8px;
+	margin: 5px 15px 5px 0px;
+	opacity:0.8;
+	border:1px double @backgroundlight;
+}
+
+/*	CPU TEMPERATURE	*/
+#temperature {
+}
+#temperature.critical {
+	background: #dc2f2f;
+	font-size: 15px;
+	font-weight: bold;
+	color: @textcolor2;
+	border-radius: 20px;
+	padding: 3px 8px 3px 8px;
+	margin: 5px 12px 5px 0px;
+	opacity:1.0;
+}
+
+/*	CLOCK	*/
+#clock {
+	background: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	color: @textcolor2;
+	border-radius: 20px;
+	padding: 3px 8px 3px 8px;
+	margin: 5px 15px 5px 0px;
+	opacity:0.8;
+	border:1px double @backgroundlight;   
+}
+
+/*	WIREPLUMBER	*/
+#wireplumber {
+	background: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	color: @textcolor2;
+	border-radius: 20px;
+	padding: 3px 8px 3px 8px;
+	margin: 5px 15px 5px 0px;
+	opacity:0.8;
+	border:1px double @backgroundlight;
+}
+#wireplumber.muted {
+	background: @workspacesbackground2;
+}
+
+/*	NETWORK & BLUETOOTH
+#network {
+	background: transparent;
+	font-size: 16px;
+	color: @textcolor2;
+	border-radius: 15px;
+	padding: 2px 10px 0px 10px;
+	margin: 5px 5px 5px 0px;
+	opacity:0.8;
+	border:2px solid @backgroundlight;
+}
+#network.ethernet {
+	background-color: transparent;
+	color: @textcolor2;
+}
+#network.wifi {
+	background: transparent;
+	color: @textcolor2;
+}
+#network.disconnected {
+	background: @workspacesbackground2;
+}
+#bluetooth, #bluetooth.on, #bluetooth.connected {
+	background: transparent;
+	font-size: 16px;
+	color: @textcolor2;
+	border-radius: 15px;
+	padding: 2px 10px 0px 10px;
+	margin: 5px 15px 5px 0px;
+	opacity:0.8;
+	border:2px solid @backgroundlight;
+}
+#bluetooth.off {
+	background: @workspacesbackground2;
+}
+*/
+
+/*	TRAY	*/
+#tray {
+	margin: 4px 15px 4px 0px;
+	padding: 0px 8px 0px 8px;
+	border-radius: 20px;
+	opacity:0.8;
+	border: 1px double @backgroundlight;
+	background: transparent;
+}
+#tray > .passive {
+	-gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+	-gtk-icon-effect: highlight;
+}
+
+/*	WEATHER	*/ 
+#custom-weather {
+	background: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	color: @textcolor2;
+	border-radius: 20px;
+	padding: 0px 8px 0px 8px;
+	margin: 5px 15px 5px 0px;
+	opacity:0.8;
+	border:1px double @backgroundlight;
+}
+
+/*	BATTERY	*/
+#battery {
+    background: transparent;
+    font-size: 15px;
+	font-weight: bold;
+    color: @textcolor2;
+	border-radius: 20px;
+   	padding: 0px 8px 0px 8px;
+	margin: 5px 15px 5px 0px;
+	opacity:0.8;
+	border:1px double @backgroundlight;
+}
+#battery.charging, #battery.plugged {
+    color: @textcolor2;
+    background: transparent;
+    font-size: 15px;
+	font-weight: bold;
+	border-radius: 20px;
+   	padding: 0px 8px 0px 8px;
+	margin: 5px 15px 5px 0px;
+	opacity:0.8;
+	border:1px double @backgroundlight;
+}
+#battery.warning:not(.charging) {
+    background: #ffed00;
+	font-size: 15px;
+	font-weight: bold;
+    color: #000000;
+	border-radius: 20px;
+	padding: 0px 8px 0px 8px;
+	margin: 5px 15px 5px 0px;
+	opacity:1.0;
+}
+#battery.critical:not(.charging) {
+    background: #dc2f2f;
+	font-size: 15px;
+	font-weight: bold;
+    color: @textcolor2;
+	border-radius: 20px;
+	padding: 0px 8px 0px 8px;
+	margin: 5px 15px 5px 0px;
+	opacity:1.0;
+}

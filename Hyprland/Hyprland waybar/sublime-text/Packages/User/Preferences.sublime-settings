@@ -1,0 +1,16 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_size": 13,
+	"font_face": "Jetbrains Mono",
+	"save_on_focus_lost": true,
+	"highlight_line": true,
+	"icon_file_type_enable": true,
+    "ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Monokai Pro.sublime-color-scheme",
+	"theme": "Monokai Pro.sublime-theme",
+	"index_files": true,
+}

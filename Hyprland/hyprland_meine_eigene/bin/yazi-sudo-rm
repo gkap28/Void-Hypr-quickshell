@@ -1,0 +1,23 @@
+#!/bin/sh
+
+printf '\n'
+printf 'ROOT-LÖSCHEN\n'
+printf '============\n'
+printf 'Folgendes wird gelöscht:\n\n'
+
+for item in "$@"; do
+    printf '  %s\n' "$item"
+done
+
+printf '\nWirklich löschen? [j/N] '
+
+read -r answer
+
+case "$answer" in
+    j|J|y|Y)
+        sudo rm -rf -- "$@"
+        ;;
+    *)
+        printf 'Abgebrochen.\n'
+        ;;
+esac

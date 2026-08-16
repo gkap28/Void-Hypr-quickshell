@@ -1,0 +1,53 @@
+diff --git a/config.def.h b/config.def.h
+index 061ad66..abcd123 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -5,6 +5,10 @@ static const unsigned int borderpx  = 1;
+ static const unsigned int snap      = 32;
+ static const int showbar            = 1;
+ static const int topbar             = 1;
++
++/* font for tags only */
++static const char *tagfonts[]       = { "monospace:size=13:style=Bold" };
++
+ static const char *fonts[]          = { "monospace:size=10" };
+
+ diff --git a/dwm.c b/dwm.c
+index bc7c2a8..cdef456 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -234,6 +234,8 @@ static int screen;
+ static int sw, sh;           /* X display screen geometry width, height */
+ static int bh;               /* bar height */
+ static int lrpad;            /* sum of left and right padding for text */
++static Drw *tagdrw;           /* drawing context for tags */
++static int tagfontheight;
+ static int (*xerrorxlib)(Display *, XErrorEvent *);
+ static unsigned int numlockmask = 0;
+ static void (*handler[LASTEvent]) (XEvent *) = {
+@@ -1536,6 +1538,13 @@ setup(void)
+ 	drw = drw_create(dpy, screen, root, sw, sh);
+ 	drw_fontset_create(drw, fonts, LENGTH(fonts));
+ 	lrpad = drw->fonts->h;
++
++	tagdrw = drw_create(dpy, screen, root, sw, sh);
++	drw_fontset_create(tagdrw, tagfonts, LENGTH(tagfonts));
++	tagfontheight = tagdrw->fonts->h;
++
+ 	bh = drw->fonts->h + 2;
+ 	updategeom();
+ 	updatebars();
+@@ -727,7 +736,11 @@ drawbar(Monitor *m)
+         else
+             drw_setscheme(drw, tagscheme[0]);
+-        drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
++        drw_text(tagdrw,
++                 x,
++                 (bh - tagfontheight) / 2,
++                 w,
++                 tagfontheight,
++                 lrpad / 2,
++                 tags[i],
++                 urg & 1 << i);
+         x += w;
+     }

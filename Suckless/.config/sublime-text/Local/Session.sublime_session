@@ -1,0 +1,561 @@
+{
+	"file_history":
+	[
+		"/home/georg/.config/user-dirs.locale",
+		"/home/georg/.config/sublime-text/Packages/Theme - Monokai Pro/Monokai Pro.sublime-color-scheme",
+		"/home/georg/.config/sublime-text/Packages/User/Monokai Pro.sublime-color-scheme",
+		"/home/georg/.config/sway/autostart.sh",
+		"/home/georg/.config/sway/config",
+		"/home/georg/sway-log.txt",
+		"/home/georg/.local/share/dwm/autostart.sh",
+		"/home/georg/.config/suckless/dwm/dwm.c",
+		"/home/georg/.config/zed/settings.json",
+		"/home/georg/.config/install-zed-x11.sh",
+		"/home/georg/.config/install-zed-appimage.sh",
+		"/home/georg/build-zed-x11.sh",
+		"/home/georg/setup-sway-zed.sh",
+		"/home/georg/.local/pkgs/void-packages/srcpkgs/zed/template",
+		"/home/georg/.config/suckless/dwm/config.def.h",
+		"/home/georg/.config/suckless/dwm_flexi/config.def.h",
+		"/run/media/georg/Ex-Hdd/Linux/Suckless/dwm-stuff/DWM/dwm-suckless_tags-zentriert/dwm/config.def.h",
+		"/home/georg/.config/sublime-text/Packages/Tomorrow Color Schemes/Tomorrow Night - Eighties.sublime-color-scheme",
+		"/home/georg/.config/sublime-text/Packages/User/Tomorrow Night - Eighties.sublime-color-scheme",
+		"/home/georg/.config/sublime-text/Packages/One Dark Material - Theme/OneDarkMaterial.sublime-theme",
+		"/home/georg/.config/sublime-text/Packages/User/OneDarkMaterial.sublime-theme",
+		"/home/georg/.local/share/applications/brave-browser.desktop",
+		"/home/georg/.local/pkgs/void-packages/srcpkgs/zed",
+		"/home/georg/.zsh_history",
+		"/home/georg/.config/sublime-text/Packages/User/brogrammer.sublime-color-scheme",
+		"/home/georg/.config/sublime-text/Packages/Theme - Brogrammer/brogrammer.tmTheme",
+		"/home/georg/.config/dwmblocks/dwmblocks.c",
+		"/home/georg/.config/dwmblocks/blocks.def.h",
+		"/run/media/georg/Ex-Hdd/Linux/Suckless/dwm-stuff/DWM/dwm-suckless_tags-zentriert/dwm/dwm.c",
+		"/home/georg/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/home/georg/.config/sublime-text/Packages/User/Preferences.sublime-settings"
+	],
+	"folder_history":
+	[
+	],
+	"last_version": 4200,
+	"last_window_id": 10,
+	"log_indexing": false,
+	"next_update_check": 1769787278,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 1032.0,
+		"new_window_maximized": false,
+		"new_window_position":
+		[
+			2560.0,
+			49.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"mono",
+						"Monokai Pro: select theme"
+					],
+					[
+						"ui",
+						"UI: Select Color Scheme"
+					],
+					[
+						"pack",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"pac",
+						"Package Control: Install Package"
+					],
+					[
+						"pa",
+						"Package Control: Install Package"
+					],
+					[
+						"mater",
+						"Material Theme: Activate theme"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/georg/.config/suckless/dwm/config.def.h",
+				"/home/georg/.config/user-dirs.locale",
+				"/home/georg/.config/sway/autostart.sh",
+				"/home/georg/.config/sway/config",
+				"/home/georg/sway-log.txt",
+				"/home/georg/.local/share/dwm/autostart.sh",
+				"/home/georg/.config/suckless/dwm/dwm.c",
+				"/home/georg/.config/zed/settings.json",
+				"/home/georg/.config/install-zed-x11.sh",
+				"/home/georg/.config/install-zed-appimage.sh",
+				"/home/georg/build-zed-x11.sh",
+				"/home/georg/setup-sway-zed.sh",
+				"/home/georg/.local/pkgs/void-packages/srcpkgs/zed/template",
+				"/home/georg/.config/suckless/dwm_flexi/config.def.h",
+				"/run/media/georg/Ex-Hdd/Linux/Suckless/dwm-stuff/DWM/dwm-suckless_tags-zentriert/dwm/config.def.h",
+				"/home/georg/.config/sublime-text/Packages/Tomorrow Color Schemes/Tomorrow Night - Eighties.sublime-color-scheme",
+				"/home/georg/.config/sublime-text/Packages/User/Tomorrow Night - Eighties.sublime-color-scheme",
+				"/home/georg/.config/sublime-text/Packages/One Dark Material - Theme/OneDarkMaterial.sublime-theme",
+				"/home/georg/.config/sublime-text/Packages/User/OneDarkMaterial.sublime-theme",
+				"/home/georg/.local/share/applications/brave-browser.desktop",
+				"/home/georg/.local/pkgs/void-packages/srcpkgs/zed",
+				"/home/georg/.zsh_history",
+				"/home/georg/.config/sublime-text/Packages/User/brogrammer.sublime-color-scheme",
+				"/home/georg/.config/sublime-text/Packages/Theme - Brogrammer/brogrammer.tmTheme",
+				"/home/georg/.config/dwmblocks/dwmblocks.c",
+				"/home/georg/.config/dwmblocks/blocks.def.h",
+				"/run/media/georg/Ex-Hdd/Linux/Suckless/dwm-stuff/DWM/dwm-suckless_tags-zentriert/dwm/dwm.c",
+				"/home/georg/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+				"/home/georg/.config/sublime-text/Packages/User/Preferences.sublime-settings"
+			],
+			"find":
+			{
+				"height": 31.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"drawbar",
+					"drawextrabar",
+					"drawbar",
+					"buttonpress",
+					"buttompress",
+					"bottompress",
+					" void drawbar(Monitor *m)",
+					" drawbar(",
+					" drawbar(Monitor ",
+					" drawbar(Monitor *m)",
+					"buttonpress",
+					"attachstack",
+					"drw_setscheme(drw, scheme[m->tagset[m->seltags] & 1 << i ? SchemeSel : SchemeNorm]);",
+					"w = TEXTW(tags[i]);"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 31.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 58.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1920.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/georg/.config/suckless/dwm/config.def.h",
+					"settings":
+					{
+						"buffer_size": 11533,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+					]
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"mono",
+						"Monokai Pro: select theme"
+					],
+					[
+						"ui",
+						"UI: Select Color Scheme"
+					],
+					[
+						"pack",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"pac",
+						"Package Control: Install Package"
+					],
+					[
+						"pa",
+						"Package Control: Install Package"
+					],
+					[
+						"mater",
+						"Material Theme: Activate theme"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/georg/.config/user-dirs.locale",
+				"/home/georg/.config/sway/autostart.sh",
+				"/home/georg/.config/sway/config",
+				"/home/georg/sway-log.txt",
+				"/home/georg/.local/share/dwm/autostart.sh",
+				"/home/georg/.config/suckless/dwm/dwm.c",
+				"/home/georg/.config/zed/settings.json",
+				"/home/georg/.config/install-zed-x11.sh",
+				"/home/georg/.config/install-zed-appimage.sh",
+				"/home/georg/build-zed-x11.sh",
+				"/home/georg/setup-sway-zed.sh",
+				"/home/georg/.local/pkgs/void-packages/srcpkgs/zed/template",
+				"/home/georg/.config/suckless/dwm/config.def.h",
+				"/home/georg/.config/suckless/dwm_flexi/config.def.h",
+				"/run/media/georg/Ex-Hdd/Linux/Suckless/dwm-stuff/DWM/dwm-suckless_tags-zentriert/dwm/config.def.h",
+				"/home/georg/.config/sublime-text/Packages/Tomorrow Color Schemes/Tomorrow Night - Eighties.sublime-color-scheme",
+				"/home/georg/.config/sublime-text/Packages/User/Tomorrow Night - Eighties.sublime-color-scheme",
+				"/home/georg/.config/sublime-text/Packages/One Dark Material - Theme/OneDarkMaterial.sublime-theme",
+				"/home/georg/.config/sublime-text/Packages/User/OneDarkMaterial.sublime-theme",
+				"/home/georg/.local/share/applications/brave-browser.desktop",
+				"/home/georg/.local/pkgs/void-packages/srcpkgs/zed",
+				"/home/georg/.zsh_history",
+				"/home/georg/.config/sublime-text/Packages/User/brogrammer.sublime-color-scheme",
+				"/home/georg/.config/sublime-text/Packages/Theme - Brogrammer/brogrammer.tmTheme",
+				"/home/georg/.config/dwmblocks/dwmblocks.c",
+				"/home/georg/.config/dwmblocks/blocks.def.h",
+				"/run/media/georg/Ex-Hdd/Linux/Suckless/dwm-stuff/DWM/dwm-suckless_tags-zentriert/dwm/dwm.c",
+				"/home/georg/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+				"/home/georg/.config/sublime-text/Packages/User/Preferences.sublime-settings"
+			],
+			"find":
+			{
+				"height": 31.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"drawbar",
+					"drawextrabar",
+					"drawbar",
+					"buttonpress",
+					"buttompress",
+					"bottompress",
+					" void drawbar(Monitor *m)",
+					" drawbar(",
+					" drawbar(Monitor ",
+					" drawbar(Monitor *m)",
+					"buttonpress",
+					"attachstack",
+					"drw_setscheme(drw, scheme[m->tagset[m->seltags] & 1 << i ? SchemeSel : SchemeNorm]);",
+					"w = TEXTW(tags[i]);"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/georg/.config/suckless/dwm/config.def.h",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 11533,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3743,
+										3743
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C++.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 1089.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 31.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,2560,24,4480,1056,4480,1080,0",
+			"project": "",
+			"replace":
+			{
+				"height": 58.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 8,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

@@ -1,0 +1,23 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_size": 12,
+	"font_face":"MesloLGS Nerd Font",
+	"save_on_focus_lost": true,
+	"highlight_line": true,
+	"caret_style": "phase",
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"theme": "Default Dark.sublime-theme",
+    "translate_tabs_to_space": true,
+    "trim_trailing_white_space_on_save":true,
+    "word_wrap": false,
+
+
+
+	"color_scheme": "Nord.sublime-color-scheme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+}

@@ -1,0 +1,36 @@
+[mgr]
+prepend_keymap = [
+    # Visuelle Auswahl / Markieren
+    { on = [ "v" ], run = "toggle", desc = "Auswahl / Markieren umschalten" },
+    { on = [ "m", "P" ], run = "plugin sudo-paste", desc = "TEST Root-Paste" },
+
+
+    # 1. Basis-Operationen
+    { on = [ "u" ], run = "rename", desc = "Umbenennen" },
+    { on = [ "l" ], run = "remove", desc = "Löschen im Heimverzeichnis ($HOME)" },
+    { on = [ "L" ], run = "plugin sudo-remove", desc = "Root löschen" },
+    { on = [ "a" ], run = "yank --cut", desc = "Ausschneiden (Cut)" },
+    { on = [ "k" ], run = "yank", desc = "Kopieren" },
+    { on = [ "e" ], run = "paste", desc = "Einfügen (Paste)" },
+
+    # 2. Navigation & Verzeichnisse wechseln
+    { on = [ ":" ], run = "cd ~", desc = "Zurück zum Heimverzeichnis (~)" },
+    { on = [ "g", "u" ], run = "cd /run/media/georg/Ex-Hdd", desc = "Direkt zur externen USB-Festplatte" },
+    { on = [ "i" ], run = "cd --interactive", desc = "Pfad eingeben" },
+
+    # 3. Terminal
+    { on = [ "t" ], run = "shell 'foot'", desc = "Terminal hier öffnen" },
+
+    # 4. Normale Dateien und Ordner
+    { on = [ "m", "n" ], run = "create --dir", desc = "Ordner erstellen" },
+    { on = [ "m", "f" ], run = "create", desc = "Datei erstellen" },
+
+    # 5. Dateien und Ordner mit sudo erstellen
+    { on = [ "m", "N" ], run = "plugin sudo-mkdir", desc = "Sudo Ordner erstellen" },
+    { on = [ "m", "F" ], run = "plugin sudo-create", desc = "Sudo Datei erstellen" },
+
+
+    # 6. USB
+    { on = [ "<C-z>", "u" ], run = "shell 'udiskie-umount /media/georg/*' --confirm", desc = "Alle USB-Laufwerke aushängen" },
+    { on = [ "<C-z>", "h" ], run = "shell 'udiskie-umount /media/georg/Ex-Hdd' --confirm", desc = "Externe Festplatte aushängen" }
+]

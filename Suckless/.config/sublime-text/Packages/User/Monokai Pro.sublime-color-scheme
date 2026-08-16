@@ -1,0 +1,35 @@
+{
+    "variables":
+    {
+    },
+    "globals":
+    {
+    },
+    "rules":
+    [
+        {
+            "name": "Selection",
+            "scope": "selection",
+            "settings":
+            {
+                "background": "#2c3740"  // sehr dezentes Petrolblau, kaum auffällig
+            }
+        },
+        {
+            "name": "Cursor Line",
+            "scope": "line_highlight",
+            "settings":
+            {
+                "background": "#141618"  // fast schwarz, stört nicht beim Lesen
+            }
+        },
+        {
+            "name": "Find Highlight",
+            "scope": "region.yellowish",
+            "settings":
+            {
+                "background": "#30383e"  // dunkles, ruhiges Highlight, kaum grell
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+"include": ["~/.config/waybar/modules.json"],
+
+"modules-left": [
+	"custom/appmenu",
+	"custom/themes",
+	"custom/cliphist",
+	"custom/script",
+	"custom/system",
+	"wlr/taskbar",
+	"group/quicklinks",
+	"hyprland/window",
+	],
+
+"modules-center": [
+	"hyprland/workspaces",
+	],
+
+"modules-right": [
+	"tray",
+	"temperature",
+	"hyprland/language",
+	"custom/updates",
+	"wireplumber",
+	"custom/weather",
+	"clock",
+	"battery",
+	"custom/exit",
+	],
+
+"group/quicklinks": {"orientation": "horizontal",
+	"modules": [
+		"custom/browser",
+		"custom/filemanager",
+		"custom/player",
+		]
+	}	
+}

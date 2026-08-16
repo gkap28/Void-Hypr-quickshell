@@ -1,0 +1,66 @@
+/*	IMPORT PYWAL COLORS	*/
+@import '../../.cache/wal/colors-wlogout.css';
+
+/*	GENERAL	*/
+* {
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto;
+	background-image: none;
+	transition: 20ms;
+	box-shadow: none;
+}
+window {
+    background-color: rgba(47, 53, 59, 0.75);
+	background-size: cover;
+	font-size: 16pt;
+	color: @color7;
+}
+button {
+	color: @color7;
+    font-size: 16pt;
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20%;
+    background-color: rgba(200, 220, 255, 0);
+    animation: gradient_f 20s ease-in infinite;
+    border: hidden;
+}
+button:hover {
+    background-color: @color11; 
+	opacity: 0.8;
+    color: #FFFFFF;
+    background-size: 25%;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-shadow: 0 0 50px @color5; 
+}
+
+/*	BUTTONS	STYLE	*/
+#lock {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/lock.png"));
+}
+#exit {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/exit.png"));
+}
+#suspend {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/suspend.png"));
+}
+#return {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/void-logo.png"));
+}
+#poweroff {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/poweroff.png"));
+}
+#reboot {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/reboot.png"));
+}

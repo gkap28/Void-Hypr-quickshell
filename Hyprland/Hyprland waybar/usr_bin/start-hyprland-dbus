@@ -1,0 +1,3 @@
+#!/bin/sh
+# Startet das originale Void-Programm in einer D-Bus-Sitzung
+exec dbus-run-session /usr/bin/start-hyprland "$@"

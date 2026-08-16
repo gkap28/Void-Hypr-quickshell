@@ -1,0 +1,32 @@
+ [mgr]
+prepend_keymap = [
+    # Visuelle Auswahl / Markieren
+    { on = [ "v" ], run = "toggle", desc = "Auswahl / Markieren umschalten" },
+
+    # 1. Basis-Operationen
+    { on = [ "u" ], run = "rename", desc = "Umbenennen" },
+    { on = [ "l" ], run = "remove", desc = "Löschen im Heimverzeichnis ($HOME)" },
+    { on = [ "L" ], run = "shell 'sudo rm -rf \"$@\"' --confirm", desc = "Löschen als Root" },
+    { on = [ "a" ], run = "yank --cut", desc = "Ausschneiden (Cut)" },
+    { on = [ "k" ], run = "yank", desc = "Kopieren" },
+
+    # 2. Navigation & Verzeichnisse wechseln
+    { on = [ ":" ], run = "cd ~", desc = "Zurück zum Heimverzeichnis (~)" },
+    { on = [ "g", "u" ], run = "cd /run/media/georg/Ex-Hdd", desc = "Direkt zur externen USB-Festplatte" },
+    { on = [ "i" ], run = "cd --interactive", desc = "Schwebendes Fenster für direkte Pfadeingabe" },
+
+    # 3. KORREKTUR: Terminal in der aktuellen PWD öffnen ohne Blockade
+    { on = [ "t" ], run = "shell 'foot' --block --orphan", desc = "Terminal hier öffnen" },
+
+    # 4. Erstellen von Dateien und Ordnern (Normaler User)
+    { on = [ "m", "n" ], run = "create --dir", desc = "Ordner erstellen (mkdir)" },
+    { on = [ "m", "f" ], run = "create", desc = "Datei erstellen (touch)" },
+
+    # 5. Erstellen mit Root-Rechten (Sudo)
+    { on = [ "m", "N" ], run = "shell 'sudo mkdir -p \"$1\"' --interactive", desc = "Sudo Ordner erstellen" },
+    { on = [ "m", "F" ], run = "shell 'sudo touch \"$1\"' --interactive", desc = "Sudo Datei erstellen" },
+
+    # 6. USB-Laufwerke unmounten / auswerfen
+    { on = [ "<C-z>", "u" ], run = "shell 'udiskie-umount /media/georg/*' --confirm", desc = "Alle USB-Sticks unmounten" },
+    { on = [ "<C-z>", "h" ], run = "shell 'udiskie-umount /media/georg/Ex-Hdd' --confirm", desc = "Externe Festplatte unmounten" }
+]

@@ -1,0 +1,208 @@
+{
+
+//	Workspaces
+"hyprland/workspaces" : {
+	"on-scroll-up": "hyprctl dispatch \"hl.dsp.focus({workspace = 'r-1'})\"",
+	"on-scroll-down": "hyprctl dispatch \"hl.dsp.focus({workspace = 'r+1'})\"",
+	"on-click": "activate",
+	"active-only": false,
+	"all-outputs": false,
+	"show-special": true,
+	"special-visible-only": false,
+	"format": "{}",
+	"format-icons": {
+		"urgent": "",
+		"active": "",
+		"default": ""
+	}
+},
+
+//	Taskbar
+"wlr/taskbar": {
+	"all-outputs": true,
+	"icon-size": 18,
+	"tooltip-format": "{name}",
+	"on-click": "activate",
+	"on-click-middle": "close"
+},
+//	Window
+"hyprland/window": {
+	"format": "{}",
+	"rewrite": {
+		"(.*) - Geany": "  $1",
+		"(.*) - Thunar": "  $1",
+		"(.*) - Brave": "  $1"
+	},
+	"max-length": 200,
+	"separate-outputs": true
+},
+//	Cliphist  
+"custom/cliphist": {
+	"format": "",
+	"on-click": "sleep 0.1 && cliphist.sh",
+	"on-click-right": "sleep 0.1 && cliphist.sh d",
+	"on-click-middle": "sleep 0.1 && cliphist.sh w",
+	"tooltip-format": "Clipboard"
+},
+//	Updates
+"custom/updates": {
+	"format": "󰶡  {}",
+	"tooltip-format": "{} updates available",
+	"escape": true,
+	"return-type": "json",
+	"exec": "updates.sh",
+	"restart-interval": 3600,
+	"on-click": "kitty --class floating -e installupdates.sh && ~/.config/waybar/launch.sh",
+	"on-click-middle": "kitty --class floating -e cleanup.sh",
+	"on-click-right": "kitty --class floating -e mirrorlist.sh"
+},
+//	Themes   
+"custom/themes": {
+	"format": "",
+	"on-click": "themes.sh",
+	"tooltip-format": "Desktop Themes"
+},
+//	File Manager
+"custom/filemanager": {
+	"format": "",
+	"on-click": "thunar",
+	"tooltip-format": "thunar"
+},
+//	Web Browser
+"custom/browser": {
+	"format": "",
+	//"on-click": "vivaldi-stable --proxy-server='http://127.0.0.1:8080'",
+	"on-click": "brave-browser-stable",
+	"tooltip-format": "brave-browser-stable"
+},    
+//	Media Player
+"custom/player": {
+	"format": "󱜅",
+	"on-click": "mpv --player-operation-mode=pseudo-gui --idle",
+	"tooltip-format": "MPV Player"
+},
+//	Scripts
+"custom/script": {
+	"format": "",
+	"on-click": "script.sh",
+	"tooltip-format": "Custom scripts"
+},
+//	System
+"custom/system": {
+	"format": "",
+	"on-click": "system.sh",
+	"tooltip-format": "System manager"
+},
+//	App Menu
+"custom/appmenu": {
+	"format": "",
+	"on-click": "fuzzel",
+	"on-click-right": "keybindings.sh",
+	"tooltip-format": "Right click for keybinds"
+},
+//	Power Menu
+"custom/exit": {
+	"format": "",
+	"on-click": "wlogout",
+	"tooltip-format": "Power Menu"
+},
+//	System tray
+"tray": {
+	"icon-size": 16,
+	"spacing": 10
+},
+//	Clock
+"clock": {
+	"interval": 1,
+	"format": " 󰥔  {:%H:%M:%S - %A, %d. %B %Y}",
+	"tooltip-format": "<big>{:%a %d %B}</big>\n\n<tt><small>{calendar}</small></tt>",
+	//"format-alt": "{:%d-%m-%Y}",
+	"calendar": {
+		"mode"          : "year",
+		"mode-mon-col"  : 3,
+		//"weeks-pos"		: "right",
+		"on-scroll"     : 1,
+			"format": {
+				"months"	: "<span color='#ffead3'><b>{}</b></span>",
+				"days"		: "<span color='#ecc6d9'><b>{}</b></span>",
+				//"weeks"		: "<span color='#99ffdd'><b>W{}</b></span>",
+				"weekdays"	: "<span color='#ffcc66'><b>{}</b></span>",
+				"today"		: "<span color='#ff6699'><b><u>{}</u></b></span>"
+			}
+		},
+	"actions": {
+		"on-click"			: "mode",
+		"on-scroll-up"		: "shift_up",
+		"on-scroll-down"	: "shift_down"
+	}
+},
+//	Weather	
+"custom/weather": {
+    "format": "{}",
+    "return-type": "json",
+    "exec": "weather.sh '39.366993,21.923761' 2> /dev/null",
+    "interval": 3600,
+    "tooltip": true,
+    "on-click": "kitty --class wttr.sh -e wttr.sh"
+},
+//	CPU_temp
+"temperature": {
+	"thermal-zone": 2,
+	"critical-threshold": 80,
+	"format-critical": "{temperatureC}°C",
+	"format": "",
+	"on-click": "kitty --class floating -e top -i",
+	"tooltip": false
+},
+//	Language
+"hyprland/language": {
+	"on-click": "hyprctl switchxkblayout logitech-wireless-keyboard-pid:0068 next",
+	//"on-click": "hyprctl switchxkblayout lenovo-lenovo-calliope-usb-keyboard next",
+	"format": "{}",
+	"format-en": "EN",
+	"format-de": "DE",
+	"format-el": "GR",
+	"keyboard-name": "logitech-wireless-keyboard-pid:0068",
+	//"keyboard-name": "lenovo-lenovo-calliope-usb-keyboard"
+},
+//	Wireplumber
+"wireplumber": {
+	"format": "{icon} {volume}%",
+	"format-muted": "",
+	"format-source": " {volume}%",
+	"format-source-muted": "",
+	"tooltip-format": "middle-click to (un)mute",
+	"tooltip": true,
+	"format-icons": {
+		"default": [" ", " ", "󰕾 ", " "]
+	},
+	"on-click": "kitty --class floating -e wiremix",
+	"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+},
+ // Battery
+"battery": {
+    "interval": 1,
+    "states": {
+      "good": 80,
+      "warning": 20,
+      "critical": 10
+    },
+    "format-discharging": "{icon}  {capacity}%",
+    "format-charging": "{icon}  {capacity}%",
+	"format-warning": "{icon}  {capacity}%}",
+    //"format-plugged": "  {capacity}%", // An empty format will hide the module
+    //"format-alt": "{icon}  {time}",
+    //"format-good": "",
+    "format-icons": {
+		"discharging": ["󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
+		"charging": ["󰢟", "󰢜", "󰢝", "󰢞", "󱃌"],
+		"warning": ["󱃍"]
+	}
+},
+//	Other
+"user": {
+	"format": "{user}",
+	"interval": 60,
+	"icon": false
+}
+}

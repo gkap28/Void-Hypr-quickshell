@@ -1,0 +1,19 @@
+[mgr]
+show_hidden = true
+sort_by = "alphabetical"
+sort_sensitive = false
+sort_reverse = false
+sort_dir_first = true
+
+[opener]
+open = [
+    { run = 'xdg-open "$@"', desc = "Oeffnen" }
+]
+
+[preview]
+# Bild-Vorschau über Sixel (absolut stabil und sicher für das foot-Terminal)
+image_provider = "sixel"
+image_delay = 30
+max_width = 1500
+max_height = 1500
+image_quality = 75

@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -x /usr/bin/agetty ]; then
+    GETTY=agetty
+else
+    GETTY=getty
+fi
+
+exec $GETTY --autologin georg --noclear tty1 38400 linux
